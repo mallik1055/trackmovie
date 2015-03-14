@@ -37,7 +37,7 @@
 			<section class='mlist'>
 
 				
-				<table id='myTable' class="flat-table flat-table-2" style="text-align:center">
+				<table id='myTable' class="flat-table flat-table-2" style="text-align:center;cursor:pointer">
 					<thead>	
 						<tr>
 							<th>Rank</th>
@@ -76,7 +76,7 @@
 			<section class='extra'>
 				<h1>Recommendations</h1>
 				<hr size='8px' color='#FFBC63'></hr>
-				<table class="flat-table flat-table-3" width='100%' id="reco">
+				<table class="flat-table flat-table-3" width='100%' id="reco"style="cursor:pointer">
 					<tbody>
 						<?php
 							foreach( $user->recommended as $recommender){
@@ -94,7 +94,7 @@
 				<br>
 				<h1>Top Movie Watchers</h1>
 				<hr size='8px' color='#FFBC63'></hr>
-				<table class="flat-table flat-table-3" width='100%' style="text-align:center">
+				<table class="flat-table flat-table-3" width='100%' style="text-align:center;cursor:pointer">
 					<thead>	
 						<tr>
 							<th>Username</th>
