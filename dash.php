@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
 	<title>(<?php echo count($user->seenMovieList); ?>)TrackMovies - One stop for movie buffs</title>
     <link rel='stylesheet' href='http://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css'>

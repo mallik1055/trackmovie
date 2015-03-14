@@ -121,6 +121,7 @@
 	}
 	.flat-table-2 th{
 		background:#194C73;
+		color:white;
 	} 
 	.flat-table-2 tr:hover {
 		background: rgba(0,0,0,0.1);
