@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <link rel="shortcut icon" href='./logo.png'>
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+  <link rel='shortcut icon' href='./images/logo.png'>
 
   <title>TrackMovies-keep track of movies you saw</title>
 
@@ -13,8 +14,8 @@
   
 </head>
 
-<body style="background-image:url(images/home_bg.jpg);background-size: cover;" >
-
+<body style="background-image:url(images/home_bg.jpg);min-width:1100px; min-height:670px; background-size: cover;" >
+ 
   
   <form class = 'login-form' id= 'login-form' method='POST'  >
     <input type='hidden' name='type'  value='login'>
@@ -26,7 +27,7 @@
 
 
 
-  <form method='POST' id = 'signup-form' class="sign-up"  style="margin-top: 100px; margin-left: 70%;">
+  <form method='POST' id = 'signup-form' class="sign-up"  style="margin-top: 68px; margin-left: 70%;">
     <h1 class="sign-up-title">Sign up in seconds !</h1>
     <input type='hidden' name='type'  value='signup'>
     <input type="text" class="sign-up-input" placeholder="Enter your First name" name='firstName' autofocus required maxlength="10">

@@ -6,7 +6,7 @@
 	$con = mysqli_connect(db_host,db_user,db_password,db_name);	
 	
 	
-		//$userId = $_SESSION['userId'];
+	//$userId = $_SESSION['userId'];
 	if($_REQUEST){
 		$userId = $_REQUEST['userId'];
 		$response = new stdclass();
@@ -50,7 +50,7 @@
 		}
 
 
-		else if($method == 'recommend'){
+		else if($method == 'recommend'){ 
 			$recommendeeName = $_POST['recommendeeName'];
 			$sql = 'SELECT * FROM users WHERE  username LIKE $recommendeeName';
 			$result = mysqli_query($con, $sql);
@@ -60,11 +60,18 @@
 	  			echo $response;
 	  			return;
 			}
+			else{
+				$row = mysqli_fetch_assoc($result);
+				$recommenderId = $userId;
+				$recommendeeId  = $row['userId'];
+				$movieId = $_REQUEST['movieId'];
+				$response->status = 'pass';
+	  			$response->message = 'Recommendation has been sent to '+$recommendeeName;
+	  			echo $response;
+	  			return;
 
-			$recommenderId = $userId;
-			$recommendeeId  = $recommendeeId;
-			$sql = 'INSERT INTO  recommendations (recommenderId,recommendeeId,movieId) VALUES ($recommenderId,$recommendeeId,$movieId)';
-			
+			}			
+			$sql = 'INSERT INTO  recommendations (recommenderId,recommendeeId,movieId) VALUES ($recommenderId,$recommendeeId,$movieId)';			
 		}
 	}
 	

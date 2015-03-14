@@ -97,7 +97,7 @@
 		font-size: 97%;
 	}
 
-	.flat-table tr td:nth-child(3){
+	.flat-table tr td:nth-child(4){
 		text-align: left;
 	}
 
@@ -121,6 +121,7 @@
 	}
 	.flat-table-2 th{
 		background:#194C73;
+		color:white;
 	} 
 	.flat-table-2 tr:hover {
 		background: rgba(0,0,0,0.1);
@@ -138,3 +139,7 @@
 		background: rgba(0,0,0,0.1);
 	}
 </style>
+
+
+
+
