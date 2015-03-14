@@ -6,6 +6,7 @@
     <link rel='stylesheet' href='http://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css'>
     <link rel='stylesheet' href='./css/dash.css'>
     <link rel='shortcut icon' href='./images/logo.png'>
+
    
 	<script src="js/icheck.js">
 	</script>
@@ -33,7 +34,7 @@
 		<div class='cleartop'>
 
 		</div>
-		<div class='container'>
+		<div class='container' style="background-image:url(images/1.jpg)">
 			<section class='mlist'>
 
 				
@@ -117,6 +118,13 @@
 					</tbody>
 				</table>
 			</section>
+		</div>
+		<div class='footer'>
+			<div >
+				<div class='cleartop'style="background-color:rgb(25, 76, 115)">
+
+				</div>
+			</div>
 		</div>
 	</div>
 </body>

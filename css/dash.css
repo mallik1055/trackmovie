@@ -42,6 +42,7 @@
 	width:66%;
 	height:auto;
 	margin-top:15px;
+	margin-bottom: 15px;
 	padding-left:10px;
 	padding-right:10px;
 	float:left;
@@ -62,6 +63,12 @@
 	font-size: 23px;
 	margin-top: 34px;
 	color: rgb(255, 188, 99);
+}
+
+.footer{
+	clear: both; 
+	height: 200px;
+	background-color: rgb(255, 188, 99);
 }
 
 

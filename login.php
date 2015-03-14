@@ -5,6 +5,7 @@
   <link rel="shortcut icon" href='./logo.png'>
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
   <link rel='shortcut icon' href='./images/logo.png'>
+  <link rel='stylesheet' href='/js/login.js'>
 
   <title>TrackMovies-keep track of movies you saw</title>
 
@@ -19,21 +20,19 @@
   
   <form class = 'login-form' id= 'login-form' method='POST'  >
     <input type='hidden' name='type'  value='login'>
-    <input class="login-field" name="username" placeholder="Enter your username" id="login-name" type="text" required maxlength="10">
-    <input class="login-field" name="password" placeholder="Password" type="password" required maxlength="15">
-    <input type="submit" id ="login-button" value="Login" class="login-button" >
+    <input class="login-field" name="username" placeholder="Enter your username" id="login-name" type="text" required maxlength=10>
+    <input class="login-field" name="password" placeholder="Password" type="password" required  maxlength=15>
+    <input type="submit" onclick="validorno()"id ="login-button" value="Login" class="login-button" >
   </form>  
   
-
-
 
   <form method='POST' id = 'signup-form' class="sign-up"  style="margin-top: 68px; margin-left: 70%;">
     <h1 class="sign-up-title">Sign up in seconds !</h1>
     <input type='hidden' name='type'  value='signup'>
-    <input type="text" class="sign-up-input" placeholder="Enter your First name" name='firstName' autofocus required maxlength="10">
-    <input type="text" class="sign-up-input" placeholder="Enter your Last name" name='lastName' required maxlength="10">
-    <input type="text" class="sign-up-input" placeholder="Choose an username" name='username' required maxlength="10">
-    <input type="password" class="sign-up-input" placeholder="Choose a password" name='password'required maxlength="15"> 
+    <input type="text" class="sign-up-input" placeholder="Enter your First name" name='firstName' autofocus required  maxlength=50>
+    <input type="text" class="sign-up-input" placeholder="Enter your Last name" name='lastName' required maxlength=10>
+    <input type="text" class="sign-up-input" placeholder="Choose an username" name='username' required  maxlength=10>
+    <input type="password" class="sign-up-input" placeholder="Choose a password" name='password'required  maxlength=15> 
     <input type="submit" id = "signup-button" value="Sign me up!" class="sign-up-button" >
   </form>
 
