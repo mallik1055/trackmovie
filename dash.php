@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--this is the dashboard page-->
 <html>
 <head>
 	<title>(<?php echo count($user->seenMovieList); ?>)TrackMovies - One stop for movie buffs</title>
