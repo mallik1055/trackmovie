@@ -5,6 +5,9 @@
     <link rel='stylesheet' href='http://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css'>
     <link rel='stylesheet' href='./css/dash.css'>
     <link rel='shortcut icon' href='./images/logo.png'>
+   
+	<script src="js/icheck.js">
+	</script>
     <script>
     	function logout(){
     		window.location = 'logout.php';
@@ -37,13 +40,13 @@
 					<thead>	
 						<tr>
 							<th>Rank</th>
+							<th>Seen</th>
 							<th>Year</th>
 							<th>Name</th>
 							<th>Your Rating</th>
 							<th>User Rating</th>
 							<th>IMDB Rating</th>
 							<th>Recommend</th>
-							<th>Seen</th>
 						</tr>
 					</thead>
 					<tbody style="background: none repeat scroll 0% 0% rgb(255, 188, 99)";>
@@ -52,13 +55,14 @@
 								foreach($movieList as $movieTitle){ ?>
 									<tr>
 									<td><?php echo $movieTitle->rank; ?></td>
+									<td><input type="checkbox" ></td>
 									<td><?php echo $movieTitle->year; ?></td>
 									<td><?php echo $movieTitle->title; ?></td>
 									<td>--</td>
 									<td>--</td>
 									<td><?php echo $movieTitle->imdbRating; ?></td>
 									<td>--</td>
-									<td>--</td>
+									
 									</tr>
 								<?php
 								} 

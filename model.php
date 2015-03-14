@@ -27,7 +27,7 @@
 			$this->firstName = '';
 			$this->lastName = '';
 			$this->seenMovieList = array(); // -> rating , movieId
-			$this->recommended = array(); // ->userId,username,movieId
+			$this->recommended = array(); // ->userId,username,movieId,movieName
 		}
 		public function getUserInfo(){ 
 				
@@ -62,7 +62,7 @@
 
 		public function getUserRecommendations(){
 			$con=mysqli_connect(db_host,db_user,db_password,db_name);
-			$sql = " SELECT * FROM recommendations INNER JOIN  users WHERE recommendeeId = '$this->userId' ";			
+			$sql = " SELECT * FROM recommendations INNER JOIN  users ON recommendations.recommenderId = users.userId WHERE recommenderId = '$this->userId' ";			
 			$result=mysqli_query($con,$sql);
 			if (mysqli_connect_errno()) {
 	  			echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -70,7 +70,8 @@
 	 		while($row = mysqli_fetch_assoc($result)){
 	 			$recommender->userId = $row['recommenderId'];
 	 			$recommender->username = $row['username'];
-	 			$recommender->movieId = $row['movieId'];	
+	 			$recommender->movieId = $row['movieId'];
+	 			$recommender->title = $row['title'];
 	 			array_push($this->recommended,$recommender);			
 			}
 

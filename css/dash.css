@@ -97,7 +97,7 @@
 		font-size: 97%;
 	}
 
-	.flat-table tr td:nth-child(3){
+	.flat-table tr td:nth-child(4){
 		text-align: left;
 	}
 
@@ -138,3 +138,7 @@
 		background: rgba(0,0,0,0.1);
 	}
 </style>
+
+
+
+
