@@ -1,16 +1,8 @@
 <?php
-/*
-	define("db_host","oniddb.cws.oregonstate.edu");
-	define("db_user","rathnamc-db");
-	define("db_password","7AytzvjYJIlDTql5");
-	define("db_name","rathnamc-db");	
-	
-*/
-
-	define("db_host","localhost");
-	define("db_user","root");
-	define("db_password","");
-	define("db_name","rathnamc-db");
+	define("db_host",$_ENV['DB_HOST']);
+	define("db_user",$_ENV['DB_USER']);
+	define("db_password",$_ENV['DB_PASSWORD']);
+	define("db_name",$_ENV['DB_NAME']);
  
 ?>
 
