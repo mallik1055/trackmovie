@@ -1,6 +1,6 @@
 # trackmovie
 
-Just a final project as part of my Web Development course in Undergrad.
+Just a final project as part of my Web Development course in Undergrad. Some features maynot be working.
 
 A website to track your movies watched.
 
