@@ -3,7 +3,7 @@
 
   <meta charset="UTF-8">
   <link rel="shortcut icon" href='./logo.png'>
-  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
   <link rel='shortcut icon' href='./images/logo.png'>
   <link rel='stylesheet' href='/js/login.js'>
 
@@ -11,7 +11,7 @@
 
     <link rel="stylesheet" href="css/temp.css">
     <link rel="stylesheet" href="css/login_style.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   
 </head>
 
