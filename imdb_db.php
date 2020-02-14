@@ -265,7 +265,7 @@
 		$year = $movie->year;
 		$movieId = explode('/',$movie->url)[2];
 		$imdbRating = $movie->rating;
-		$imdbUrl = 'http://www.imdb.com/title/'+$movieId;
+		$imdbUrl = 'https://www.imdb.com/title/'+$movieId;
 		$sql = "INSERT INTO movie_db (rank,title,year,movieId,imdbRating) VALUES ('$rank','$title','$year','$movieId','$imdbRating')";
 		mysqli_query($con,$sql);
 	}
