@@ -3,7 +3,7 @@
 <html>
 <head>
 	<title>(<?php echo count($user->seenMovieList); ?>)TrackMovies - One stop for movie buffs</title>
-    <link rel='stylesheet' href='http://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css'>
     <link rel='stylesheet' href='./css/dash.css'>
     <link rel='shortcut icon' href='./images/logo.png'>
 
